@@ -1,73 +1,95 @@
 # python-node
 
 #############################################################
- virtualenv:
+
+# virtualenv:
  
-Clear Windows Terminal:
+# Clear Windows Terminal:
+
 	cls
 
-Create Virtual environment:
+# Create Virtual environment:
+	
 	pip install virtualenv
 
 Then Goto Project Folder & Run
+	
 	virtualenv nameOfVirtualenv
 
 Then Inter nameOfVirtualenv
+	
 	cd nameOfVirtualenv
 
 Then Enter Scripts For Windows:
+	
 	cd Scripts
 
 Then Active/Deactive virtualenv:
+	
 	activate/d+Tab
 
 
 
 ##########################################################################
-install all packege django project
+# install all packege django project
+    
     pip install -r requirements.txt
 
-package list:
+# package list:
+    
     pip list
 
-install Django:
+# install Django:
+    
     pip install django
 
-Django Version check
+# Django Version check
+    
     python -m django --version
 
 
-Create Django Project on windows:
+# Create Django Project on windows:
+    
     python -m django startproject crud
+    
     django-admin startproject mysite
 
-run Server:
+# run Server:
+    
     python manage.py runserver
 
-create App:
+# create App:
+    
     python manage.py startapp users
 
-migrate DB:
+# migrate DB:
+    
     python manage.py migrate        
 
-install postgres package:
+# install postgres package:
+    
     pip install psycopg2
 
 after create model:
+    
     python manage.py makemigrations   
 
 Form Package:
+    
     pip install django-crispy-forms     
 
-Create Environment Variable:
+# Create Environment Variable:
+    
     pip install python-decouple
     then import it settings.py file
     from decouple import config
 
 For Image:
+    
     pip install Pillow
 
 for filter Data:
+    
     pip install django-filter 
 
 #########################################################################
@@ -83,13 +105,13 @@ Push an Existing Project to GitHub
 
 ##########################################################################
 
-Docker Command:
+# Docker Command:
 
-Config;
-docker build .   
+# Config;
+	docker build .   
 
-create Django  Project: 
-docker-compose run app sh -c "python -m django startproject app ."
+# create Django  Project: 
+	docker-compose run app sh -c "python -m django startproject app ."
 
-test command:
-docker-compose run app sh -c "python manage.py test"
+# test command:
+	docker-compose run app sh -c "python manage.py test"
